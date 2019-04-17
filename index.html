@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Urban Planet</title>
+<style>
+/* body {
+	background-color: #696969;
+	}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 100px 0;
+  width: 5%;
+}
+img {
+	animation-name: intro;
+	animation-duration: 
+}
+img:hover {
+	cursor: pointer;
+	} 
+#intro {
+	background-image: url('family.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 1080px;
+	
+	}*/
+	html { 
+  background: url(family.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+	color: white;
+	font-size: 4.5vw;
+	font-family: "museo-sans",sans-serif;
+}
+	p {
+		font-family: "museo-sans",sans-serif;
+		color: #FFFFFF;
+		font-size: 1.5vw;
+		line-height: 1.8;
+	}
+.hcenter {
+	text-align: center;
+}
+.vcenter {
+	line-height: 200px;
+	height: 200px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #BFD72C;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 225px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button value {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.button value:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+.button:hover value {
+  padding-right: 25px;
+}
+
+.button:hover value:after {
+  opacity: 1;
+  right: 0;
+}
+#top {
+height: 775px;
+background-color: rgba(0,0,0,0.5); 
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+html {
+  scroll-behavior: smooth;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 100px 0;
+  width: 5%;
+}
+#topleftlogo {
+transition: transform 0.4s;
+cursor: pointer;
+}
+#topleftlogo:hover {
+transform: rotate(90deg);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#tbar {
+	background-color: #FFFFFF;
+	}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+.leftmost {
+  width: 25%;
+  float: left;
+	padding-right: 3%;
+	padding-left: 2%;
+	padding-top: 30px;
+}
+.rightmost {
+  width: 70%;
+  float: left;
+
+}
+/* 
+Define this in your CSS 
+Animation-Title = Replace it by the name you want to give your animation
+*/
+
+/* Standard Syntax */
+@keyframes intro1 {
+	from {opacity: 0;}
+	to{opacity: 1;}
+}
+	
+@keyframes intro2 {
+	from {opacity: 0;}
+	to{opacity: 1;}
+}
+
+.animation1 {	
+	animation: intro1 3s 1;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+.animation2 {	
+	animation: intro2 3s 1;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
+}
+	.nowrap {
+		white-space: nowrap;
+	}
+	.sidelink {
+		font-family: "museo-sans",sans-serif;
+	}
+.svg {
+	filter: invert(76%) sepia(85%) saturate(422%) hue-rotate(15deg) brightness(97%) contrast(86%);
+	position:absolute;
+	z-index: 2;
+	-webkit-clip-path: circle(0% at 50% 50%);
+	clip-path: circle(0% at 50% 50%);
+	}
+.svgs {
+	filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(313deg) brightness(105%) contrast(101%);
+	position: absolute;
+	z-index: 1;
+	}
+.iconic {
+	transition: clip-path 0.4s;
+	}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav nowrap">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav() ">&times;</a>
+  <a class="sidelink" href="#top" onClick="closeNav()">Why Us?</a>
+  <a class="sidelink" href="#">Services</a>
+  <a class="sidelink" href="#">Clients</a>
+  <a class="sidelink" href="tel:07-4128-2888" onClick="closeNav()">Contact</a>
+	
+</div>
+<div>
+<img id="topleftlogo" src="Logo-cut-glow.png" alt="Urban Planet Logo" onclick="openNav()" onmouseover="rotateninety()" onmouseleave="rotatezero()">
+
+</div>
+<div id="intro">
+<h1 class="hcenter" style="color: #BFD72C; font-size: 5vw;">Urban Planet</h1>
+<h1 class="hcenter animation1">Local Knowledge</h1>
+<h1 style="font-style: italic;" class="hcenter animation2">Real Results</h1>
+</div>
+
+<div class="hcenter" style="padding-bottom:200px;">
+<!--<button class="button" style="vertical-align:middle;"> onClick="document.getElementById('middle').scrollIntoView();" <span>Learn More </span></button>-->
+<input type="button" class="button" style="vertical-align:middle;" onClick="document.getElementById('top').scrollIntoView();" value="Learn More"/>
+</div>
+<div id="top" style="overflow: auto;">
+<h1 class="hcenter" style="font-size:4vw; padding-top:10px;">Why Urban Planet?</h1>
+<img class='leftmost'src="gym.png" alt="Ward Veitch helping out at the gym">
+<p class="rightmost">Urban Planet has built a reputation over the last <b>decade</b> on the Fraser Coast for delivering positive outcomes, approvals and <b>real results</b>...<br> If you are after honest personalised advice based on experience of planning and development in regional Queensland, you have come to the right place.<br><br>At Urban Planet we recognise the importance of your timetables and cost effective delivery in the development process.<br> Our goal is to provide you with practical thorough advice in order to streamline the legislative process and achieve sustainable outcomes.<br> And it doesn&#39;t come any more personalised than dealing <b>directly</b> with the decision maker - Ward Veitch, all the way through your planning works.<br> This dedicated, personal approach ensures <b>your</b> project receives the attention it deserves.</p>
+</div>
+
+	<div onmouseover="colourise('unone')" onmouseout="decolourise('unone')" style="display: inline-block;">
+		<svg class="iconic svgs" width="50" height="50" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slices/><sliceSourceBounds width="1447.7" height="1447.2" x="1" y="-1448.3" bottomLeftOrigin="true"/></sfw></metadata><path d="M97.6,10.2L63,94.4c-2.1,5.1-9.4,4.9-11.2-0.3l-9.8-28.8l30.9-36.4c0.9-1.1-0.6-2.6-1.7-1.7L34.7,58.1L5.9,48.2  C0.7,46.4,0.5,39.1,5.6,37L89.8,2.4C94.7,0.3,99.7,5.3,97.6,10.2z"/><text x="0" y="115" fill="#BFD72C" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text><text x="0" y="120" fill="#BFD72C" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg>
+		<svg class="iconic svg" id="unone" width="50" height="50" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slices/><sliceSourceBounds width="1447.7" height="1447.2" x="1" y="-1448.3" bottomLeftOrigin="true"/></sfw></metadata><path d="M97.6,10.2L63,94.4c-2.1,5.1-9.4,4.9-11.2-0.3l-9.8-28.8l30.9-36.4c0.9-1.1-0.6-2.6-1.7-1.7L34.7,58.1L5.9,48.2  C0.7,46.4,0.5,39.1,5.6,37L89.8,2.4C94.7,0.3,99.7,5.3,97.6,10.2z"/><text x="0" y="115" fill="#BFD72C" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text><text x="0" y="120" fill="#BFD72C" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg>
+	</div>
+	
+	<div onmouseover="colourise('untwo')" onmouseout="decolourise('untwo')" style="display: inline-block;">
+		<svg class="iconic svgs" width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px"><title>16</title><desc></desc><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#000000"><path d="M71.5067843,31.0197065 L59.0603137,58.2831115 C58.963451,58.4950489 58.8305098,58.6842857 58.670902,58.8455382 C58.666,58.8508219 58.6616863,58.8564971 58.6565882,58.8615851 C58.6548235,58.8633464 58.6526667,58.8649119 58.651098,58.8666732 C58.4873725,59.0298826 58.2942353,59.165499 58.0779608,59.2639335 L30.760902,71.686047 C30.5001176,71.804638 30.2230588,71.8621722 29.948549,71.8621722 C29.4389412,71.8621722 28.9373725,71.6639335 28.5614902,71.2889824 C27.9830588,70.711683 27.8244314,69.8365362 28.1636471,69.0938748 L40.6101176,41.830274 C40.7093333,41.6130528 40.8461961,41.4191194 41.0112941,41.2551272 C41.0118824,41.2543444 41.0124706,41.2535616 41.0130588,41.2529746 C41.0189412,41.2471037 41.0254118,41.2422114 41.0312941,41.2365362 C41.1924706,41.0780235 41.381098,40.9457339 41.5926667,40.8494521 L68.9095294,28.4275342 C69.6538431,28.0889824 70.5305098,28.2472994 71.1091373,28.8245988 C71.6873725,29.4018982 71.846,30.2768493 71.5067843,31.0197065 L71.5067843,31.0197065 Z M88.1371765,52.0056164 C87.0544314,52.0056164 86.1763922,51.1294912 86.1763922,50.0486693 C86.1763922,48.9680431 87.0544314,48.0917221 88.1371765,48.0917221 L99.9177647,48.0917221 C99.4322745,35.4999413 94.2926667,23.7312524 85.3146275,14.7705871 C76.3344314,5.80796477 64.5393333,0.678219178 51.9193333,0.195636008 L51.9193333,11.9445597 C51.9193333,13.0253816 51.0412941,13.9015068 49.958549,13.9015068 C48.8756078,13.9015068 47.9977647,13.0253816 47.9977647,11.9445597 L47.9977647,0.195831703 C35.3781569,0.678414873 23.5836471,5.80835616 14.6038431,14.7705871 C5.62560784,23.7312524 0.486,35.4999413 0.000509803922,48.0917221 L11.7797255,48.0917221 C12.8624706,48.0917221 13.7405098,48.9680431 13.7405098,50.0486693 C13.7405098,51.1294912 12.8624706,52.0056164 11.7797255,52.0056164 L-7.84313725e-05,52.0056164 C0.481686275,64.6038552 5.62188235,76.3786106 14.6038431,85.3429941 C23.5836471,94.305225 35.3781569,99.4351663 47.9977647,99.9177495 L47.9977647,88.1527789 C47.9977647,87.0719569 48.8756078,86.1958317 49.958549,86.1958317 C51.0412941,86.1958317 51.9193333,87.0719569 51.9193333,88.1527789 L51.9193333,99.9177495 C64.5393333,99.435362 76.3344314,94.3056164 85.3146275,85.3429941 C94.2965882,76.3786106 99.4365882,64.6038552 99.9181569,52.0056164 L88.1371765,52.0056164 Z M43.0076275,46.0182387 L33.9060588,65.954638 L53.8817451,56.8710763 L48.4488039,51.4405479 L43.0076275,46.0182387 Z"/></g></g><text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg>
+		<svg class="iconic svg" id="untwo" width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px"><title>16</title><desc></desc><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#000000"><path d="M71.5067843,31.0197065 L59.0603137,58.2831115 C58.963451,58.4950489 58.8305098,58.6842857 58.670902,58.8455382 C58.666,58.8508219 58.6616863,58.8564971 58.6565882,58.8615851 C58.6548235,58.8633464 58.6526667,58.8649119 58.651098,58.8666732 C58.4873725,59.0298826 58.2942353,59.165499 58.0779608,59.2639335 L30.760902,71.686047 C30.5001176,71.804638 30.2230588,71.8621722 29.948549,71.8621722 C29.4389412,71.8621722 28.9373725,71.6639335 28.5614902,71.2889824 C27.9830588,70.711683 27.8244314,69.8365362 28.1636471,69.0938748 L40.6101176,41.830274 C40.7093333,41.6130528 40.8461961,41.4191194 41.0112941,41.2551272 C41.0118824,41.2543444 41.0124706,41.2535616 41.0130588,41.2529746 C41.0189412,41.2471037 41.0254118,41.2422114 41.0312941,41.2365362 C41.1924706,41.0780235 41.381098,40.9457339 41.5926667,40.8494521 L68.9095294,28.4275342 C69.6538431,28.0889824 70.5305098,28.2472994 71.1091373,28.8245988 C71.6873725,29.4018982 71.846,30.2768493 71.5067843,31.0197065 L71.5067843,31.0197065 Z M88.1371765,52.0056164 C87.0544314,52.0056164 86.1763922,51.1294912 86.1763922,50.0486693 C86.1763922,48.9680431 87.0544314,48.0917221 88.1371765,48.0917221 L99.9177647,48.0917221 C99.4322745,35.4999413 94.2926667,23.7312524 85.3146275,14.7705871 C76.3344314,5.80796477 64.5393333,0.678219178 51.9193333,0.195636008 L51.9193333,11.9445597 C51.9193333,13.0253816 51.0412941,13.9015068 49.958549,13.9015068 C48.8756078,13.9015068 47.9977647,13.0253816 47.9977647,11.9445597 L47.9977647,0.195831703 C35.3781569,0.678414873 23.5836471,5.80835616 14.6038431,14.7705871 C5.62560784,23.7312524 0.486,35.4999413 0.000509803922,48.0917221 L11.7797255,48.0917221 C12.8624706,48.0917221 13.7405098,48.9680431 13.7405098,50.0486693 C13.7405098,51.1294912 12.8624706,52.0056164 11.7797255,52.0056164 L-7.84313725e-05,52.0056164 C0.481686275,64.6038552 5.62188235,76.3786106 14.6038431,85.3429941 C23.5836471,94.305225 35.3781569,99.4351663 47.9977647,99.9177495 L47.9977647,88.1527789 C47.9977647,87.0719569 48.8756078,86.1958317 49.958549,86.1958317 C51.0412941,86.1958317 51.9193333,87.0719569 51.9193333,88.1527789 L51.9193333,99.9177495 C64.5393333,99.435362 76.3344314,94.3056164 85.3146275,85.3429941 C94.2965882,76.3786106 99.4365882,64.6038552 99.9181569,52.0056164 L88.1371765,52.0056164 Z M43.0076275,46.0182387 L33.9060588,65.954638 L53.8817451,56.8710763 L48.4488039,51.4405479 L43.0076275,46.0182387 Z"/></g></g><text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg>
+	</div>
+	
+
+
+<div id="middle" style="height: 5000px;">
+<h1>
+Hello World
+</h1>
+</div>
+<!--<img class="center" src="Logo-cut.png" alt="Urban Planet Logo">-->
+<script>
+ function rotateninety() {
+	document.getElementById("topleftlogo").style.transform = "rotate(90deg)";
+	var hov = "1"
+ }
+  function rotatezero() {
+  if (hov = "1") {
+	document.getElementById("topleftlogo").style.transform = "rotate(0deg)";
+	var hov = "0"
+	}
+ }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("topleftlogo").style.transform = "rotate(90deg)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("topleftlogo").style.transform = "rotate(0deg)";
+  }
+ function colourise(id) {
+	document.getElementById(id).style.clipPath = "circle(100% at 50% 50%)";
+	}
+function decolourise(id) {
+	document.getElementById(id).style.clipPath = "circle(0% at 50% 50%)";
+	}
+</script>
+</body>
+</html>
