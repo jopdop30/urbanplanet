@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Eb1y</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<style>
+body { padding-top:10px;}
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+</style>
+  </head>
+  <body>
+	  <script src="https://cdn.jsdelivr.net/npm/gpu.js@2.9.4/dist/gpu-browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/num2word@1.0.2/num2Word.min.js"></script>
+ <div class="container">
+<input type="number" placeholder="Please enter a number..." id="myInput">
+<button onclick="oliverStinks()">Click me</button>
+<hr class="my-4">
+<div id="poopy">
+
+</div>
+</div>
+  <script>
+function oliverStinks() {
+var noggo = document.getElementById("myInput").value;
+
+	for (i = 1; i <= noggo; i++) {
+var kir = "Eb" + num2Word(i) + "y";
+  var para = document.createElement("p");
+var node = document.createTextNode(kir);
+para.appendChild(node);
+
+var element = document.getElementById("poopy");
+element.appendChild(para);
+}
+}
+  </script>
+  </body>
+</html>
